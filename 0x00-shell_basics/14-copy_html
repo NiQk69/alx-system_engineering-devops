@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in $(find . -name "*.html" -newer ../); do cp -n "$file" /tmp && echo "Copied $file to /tmp"; done
+find . -name "*.html" -newer ../ -exec cp -n {} /tmp \; | while read -r line; do echo "Copied $line to /tmp"; done
