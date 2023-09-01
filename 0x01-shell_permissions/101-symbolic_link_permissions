@@ -1,3 +1,2 @@
 #!/bin/bash
-sudo chown vincent:staff _hello ls -l _hello | awk 'NR==1{print $3, $4}'
-
+chown -h vincent:staff _hello
