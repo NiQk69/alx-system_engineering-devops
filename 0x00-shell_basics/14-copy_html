@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -newer ../ -exec cp -n {} /tmp \; | while read -r line; do echo "Copied $line to /tmp"; done
+cp -u *.html ..
