@@ -1,2 +1,2 @@
 #!/bin/bsh
-echo "YourInputText" | tr 'Ac' 'Ze'
+tr 'Ac' 'Ze'
